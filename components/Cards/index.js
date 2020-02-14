@@ -56,7 +56,7 @@ function createComp(obj) {
 
     axios.get("https://lambda-times-backend.herokuapp.com/articles")
     .then(response => {
-        // console.log(response)
+        console.log(response)
         response.data.articles.bootstrap.map(obj => {
             cards.appendChild(createComp(obj))
         })
